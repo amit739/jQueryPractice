@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").prepend(" <b>prepended text</b>");
+                $("h2").wrap("<h></h>");
+            });
+            $("#btn2").click(function(){
+                $("p").append(" <li> append item </li>");
+                
+            });
+            $("#btn3").click(function(){
+                
+                $("h2").text("h2 position changes").appendTo($("p"));
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <h2>Greeting</h2>
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p>
+    <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ol>
+    <button id="btn1">prepend text</button>
+    <button id="btn2"> Append list items</button>
+    <button id="btn3"> AppendTo text</button>
+    
+</body>
+</html>

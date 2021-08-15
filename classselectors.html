@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //$('p');//use in console
+
+            //$("div p"); use in console
+
+            //$("div p").hide(5000);
+
+            //$("div p").show(5000);
+
+           // $("div p").html();use in console
+        //    $('.bold').css("font-weight",'bold')
+        //    $(".red,.blue").css("color","red")
+
+        //    $("div p").each(function(){
+
+        //     alert($(this).html())
+        //    });
+        $("h1").each(function(i,ele){
+            alert(i + "  "+ $(ele).html());
+
+
+        });
+
+
+
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <h1>Amit</h1>
+    <h1>Kumar</h1>
+    <p class="bold">First paragraph </p>
+    <p>Second paragraph</p>
+    <div>
+        <p class="bold">first para</p>
+        <p>second para</p>
+        <p class="red">third para</p>
+        <p>furth para</p>
+        <p class="blue">fifth para</p>
+        <p>six para</p>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#submitButton").click(function(){
+                var fname = $("#txtfirstName").val();
+                var lname = $("#txtlastName").val();
+                $("#tgtDiv").html("<b>"+fname+" "+lname+"</b>");
+
+            });
+        });
+
+    </script>
+</head>
+<body>
+    First Name:<input type="text" id="txtfirstName"><br>
+    Last Name:<input type="text" id="txtlastName"><br>
+    <input type="submit" id="submitButton" value="submit">
+    <div id="tgtDiv"></div>
+    
+</body>
+</html>

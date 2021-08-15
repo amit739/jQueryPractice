@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var list = $('div[title="first"], img[height]');
+            alert(list.length);
+
+        });
+        
+    </script>
+</head>
+<body>
+    <div title="first">
+        Name:<input type="text">
+    </div><br>
+    <div title="second">
+        Password:<input type="text">
+    </div><br>
+    <img src="img1.jpg" height="50" width="50" >
+    <img src="img2.png" width="50" >
+    
+</body>
+</html>
